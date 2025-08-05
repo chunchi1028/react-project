@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+}
+.wrap{
+    width: 960px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 50px;
+}
+img{
+    width:100%;
+    margin: 5px 0;
+}
+p{
+    margin: 20px 0;
+}
+ul {
+  list-style-type: none;
+   padding-left:0;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+figure{
+    margin-bottom:20px;
+}
+figcaption{
+    font-size: 12p;
+    color:#222;
+}
