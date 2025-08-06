@@ -1,4 +1,4 @@
-import './css/App0805-02.css'
+import '../css/App0805-02.css'
 function App() {
     return (
         <>

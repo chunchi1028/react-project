@@ -1,4 +1,4 @@
-import './css/App0805-1.css'
+import '../css/App0805-1.css'
 function App() {
     // 一般變數
     const personName="淇淇"
