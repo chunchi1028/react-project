@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Card = ({imgURL, title, desc, btnName, btnURL}) => {
     // console.log(props.imgURL)
