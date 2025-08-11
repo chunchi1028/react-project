@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container {
+    border: 1px solid grey;
+     width: 500px;
+     height: 350px;
+     border-radius: 5px;
+     display: flex;
+    
+     
+}
+.location{
+     display: flex; 
+}
+
+.weather{
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 150px;
+
+}
