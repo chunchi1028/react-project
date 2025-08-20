@@ -7,7 +7,7 @@ import { HashRouter } from 'react-router-dom'
 // import App from './App0805-2'
 //  import './all.css'
 // import App from './MyApp'
-import App from"./pages/App0819_3(有誤還沒排查)"
+import App from"./pages/App0820"
 
 createRoot(document.getElementById('root')).render(
   // 嚴謹模式
