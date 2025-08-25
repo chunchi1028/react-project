@@ -1,22 +1,28 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 // 方法1
-const CreateForm = ({ todos, setTodos }) => {
+const EditForm = ({ todo, editTodo }) => {
 
-    const [txt, setTxt] = useState('');
+    const [txt, setTxt] = useState(todo.txt);
     // 建立一個函式處理新增的todo資料
-    const addData=()=> {
+    const editData = () => {
         let myInput = document.getElementById('myInput');
         myInput.focus(); //指定游標
         // console.log(content.length)
         if (txt.length === 0) {
             alert("沒有輸入待辦內容!請重新輸入");
         } else {
-            setTodos([...todos, { content: txt, id: Math.random(),isCompleted:false ,isEdit:false}])
-            setTxt(''); //清除內容框的內容
+            editTodo(todo.id, txt);
         }
     }
+
+    // 送單送時
+    const handleSubmit = (e) => {
+        // 取消送出的預設行為
+        e.preventDefault();
+        editTodo(todo.id, txt);
+    }
     return (
-        <form className='create-form'>
+        <form className='create-form' /*onSubmit={handleSubmit}*/>
             <input
                 id='myInput'
                 type="text"
@@ -27,7 +33,7 @@ const CreateForm = ({ todos, setTodos }) => {
                     setTxt(e.target.value.trim());
                 }}
             />
-            <button type='button' onClick={addData}>加入</button>
+            <button type='button' onClick={editData}>完成</button>
 
         </form>
     )
@@ -59,4 +65,4 @@ const CreateForm = ({ todos, setTodos }) => {
 //     )
 // }
 
-export default CreateForm
+export default EditForm
